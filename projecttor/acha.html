@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khansa's 19</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="../pic/acha1.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Matemasie&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="welcome">khansahanira</a>
+        <ul>
+            <li><a href="#" class="active">Enjoy</a></li>
+            <li><a href="#">Your</a></li>
+            <li><a href="#">19's</a></li>
+            <li><a href="#">Day</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="../pic/stars.png" id="stars">
+        <img src="../pic/moon.png" id="moon">
+        <img src="../pic/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Acha's Day</h2>
+        <img src="../pic/mountains_front.png" id="mountains_front">
+        <a href="#sec" id="btn">Explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2 class="hhbd">Happy <span class="hbd">Birthday</span> Pretty</h2>
+        <p class="wish">Selamat ulang tahun yang ke-19! Di usia yang istimewa ini, terima kasih sudah berusaha dengan begitu keras
+            sampai sejauh ini. Semua tantangan yang telah kamu hadapi telah membuatmu semakin kuat dan dewasa. Jangan
+            lupa untuk selalu menghargai diri sendiri atas segala upaya yang telah kamu lakukan. Semoga setiap langkah
+            yang kamu ambil membawa kamu lebih dekat ke impian-impian besar yang ingin kamu capai.
+
+            Di momen spesial ini, mari kita juga bersyukur atas semua orang di sekitarmu yang selalu mendukung dan
+            menyayangi kamu. Mereka adalah bagian penting dari perjalananmu, dan bersama mereka, kamu bisa melalui
+            segala suka dan duka. Nikmati setiap momen, dan jangan pernah berhenti bermimpi serta berusaha. Perjalanan
+            ini mungkin tidak selalu mudah, tapi kamu telah membuktikan bahwa kamu bisa melaluinya dengan penuh semangat
+            dan tekad.
+
+            Selamat merayakan hari spesialmu, semoga tahun ini menjadi awal dari petualangan hidup yang luar biasa! 🎉🎂
+        </p>
+    </div>
+    <div class="tion">
+        <h2 class="foto">FOTO(s) ACHA</h2>
+        <img src="../pic/picc/Untitled180_20240902175538.png" width="200px" height="200px" id="acha1">
+        <img src="../pic/picc/Untitled180_20240902175559.png" width="200px" height="200px" id="acha2">
+        <img src="../pic/picc/Untitled180_20240902181741.png" width="200px" height="200px" id="acha3">
+        <img src="../pic/picc/Untitled180_20240902175751.png" width="200px" height="200px" id="acha4">
+        <img src="../pic/picc/Untitled180_20240902175804.png" width="200px" height="200px" id="acha5">
+        <img src="../pic/picc/Untitled180_20240902175825.png" width="200px" height="200px" id="acha6">
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 0.5 + 'px';
+            btn.style.marginTop = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
